@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('./connect_db');
 
+// sdd
 // Here we define a model called articles which has two attributes called title
 // and content.
 // This model correcponds to the "articles" table in the database.
@@ -25,31 +26,31 @@ const Article = db.define('articles', {
 // at end of the program (the closing braces) and see what happens.
 db.sync({ force: true })//.then(() => {
 
-  // When creating a record the id attribute is automatically generated and put into the database.
-  Article.create({
-    title: 'War and Peace',
-    content: 'A book about fighting and then making up.'
-  });
+// When creating a record the id attribute is automatically generated and put into the database.
+Article.create({
+  title: 'War and Peace',
+  content: 'A book about fighting and then making up.'
+});
 
-  Article.create({
-    title: 'Sequelize for dummies',
-    content: 'Writing lots of cool javascript code that get turned into SQL.'
-  });
+Article.create({
+  title: 'Sequelize for dummies',
+  content: 'Writing lots of cool javascript code that get turned into SQL.'
+});
 
-  Article.create({
-    title: 'I like tomatoes',
-    content: 'The story about the adventures of a tomato lover.'
-  });
+Article.create({
+  title: 'I like tomatoes',
+  content: 'The story about the adventures of a tomato lover.'
+});
 
-  Article.create({
-    title: 'PHP for dummies',
-    content: 'Why PHP is so so so bad at backend stuff. Why you should use express node.'
-  });
+Article.create({
+  title: 'PHP for dummies',
+  content: 'Why PHP is so so so bad at backend stuff. Why you should use express node.'
+});
 
-  Article.create({
-    title: 'The lovely car',
-    content: 'How a car changed his life forever.'
-  });
+Article.create({
+  title: 'The lovely car',
+  content: 'How a car changed his life forever.'
+});
 
 //});
 
