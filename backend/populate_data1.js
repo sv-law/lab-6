@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('./connect_db');
 
-// sdd
+// tests
 // Here we define a model called articles which has two attributes called title
 // and content.
 // This model correcponds to the "articles" table in the database.
